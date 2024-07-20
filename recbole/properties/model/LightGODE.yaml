@@ -1,5 +1,5 @@
 embedding_size: 64
 training_neg_sample_num: 0
-gamma: 0.5 #5
+gamma: 0.5 #10
 t: 1.8
-train_strategy: MF_init #MF_init, MF, GCN
+train_strategy: MF_init #MF_init, MF, GODE

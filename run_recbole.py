@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", "-d", type=str, default="ml-100k", help="name of datasets")
     parser.add_argument('--gpu', '-g', type=str, default='0', help='gpu id')
     parser.add_argument('--lr', '-l', type=float, default=0.001, help='learing rate')
-    parser.add_argument('--weight_decay', '-w', type=float, default=None, help='weight decay')
+    parser.add_argument('--weight_decay', '-w', type=float, default=1e-8, help='weight decay')
     parser.add_argument('--tem', '-t', type=float, default=None, help='temporary parameters')
     parser.add_argument('--suffix', '-s', type=str, default=None, help='suffix logger')
     parser.add_argument("--config_files", type=str, default=None, help="config files")

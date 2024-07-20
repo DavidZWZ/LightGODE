@@ -25,7 +25,7 @@ class LightGODE(GeneralRecommender):
         self.train_stage = 'pretrain'
         if self.train_strategy == 'MF':
             self.use_mf = True
-        elif self.train_strategy == 'GCN':
+        elif self.train_strategy == 'GODE':
             self.use_mf = False
         else:
             self.use_mf = None

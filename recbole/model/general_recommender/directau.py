@@ -21,19 +21,10 @@ class DirectAU(GeneralRecommender):
         self.gamma = config['gamma']
         self.encoder_name = config['encoder']
         self.train_strategy = config['train_strategy']
-        if self.train_strategy == 'MF':
-            self.train_MF = True
-        elif self.train_strategy == 'GCN':
-            self.train_MF = False
 
         # define layers and loss
         if self.encoder_name == 'MF':
             self.encoder = MFEncoder(self.n_users, self.n_items, self.embedding_size)
-        elif self.encoder_name == 'LightGCN':
-            self.n_layers = config['n_layers']
-            self.interaction_matrix = dataset.inter_matrix(form='coo').astype(np.float32)
-            self.norm_adj = self.get_norm_adj_mat().to(self.device)
-            self.encoder = LGCNEncoder(self.n_users, self.n_items, self.embedding_size, self.norm_adj, self.n_layers)
         else:
             raise ValueError('Non-implemented Encoder.')
 
@@ -70,9 +61,7 @@ class DirectAU(GeneralRecommender):
         return SparseL
 
     def forward(self, user, item):
-        if self.train_strategy == 'MF_init':
-            self.train_MF = self.training
-        user_e, item_e = self.encoder(user, item, self.train_MF)
+        user_e, item_e = self.encoder(user, item)
         return F.normalize(user_e, dim=-1), F.normalize(item_e, dim=-1)
 
     @staticmethod
@@ -123,7 +112,7 @@ class MFEncoder(nn.Module):
         self.user_embedding = nn.Embedding(user_num, emb_size)
         self.item_embedding = nn.Embedding(item_num, emb_size)
 
-    def forward(self, user_id, item_id, self_training=False):
+    def forward(self, user_id, item_id):
         u_embed = self.user_embedding(user_id)
         i_embed = self.item_embedding(item_id)
         return u_embed, i_embed
