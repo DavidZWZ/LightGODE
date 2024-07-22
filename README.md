@@ -5,6 +5,12 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 > 33rd ACM International Conference on Information and Knowledge , CIKM 2024 <br>
 > Weizhi Zhang, Liangwei Yang, Zihe Song, Henry Peng Zou, Ke Xu, Liancheng Fang, Philip S. Yu <br>
 
+<p align="center">
+  <img src="Images/Prelim.png" alt="Investigation of Role of Graph Convolution" width="33%">
+  <img src="Images/BFS-DFS.png" alt="BFS (GCN) vs DFS (MF) perspective" width="33%"/>
+  <img src="Images/Trade-off.png" alt="The Embedding Discrepancy Issue" width="33%"/>
+</p>
+
 ![Framework](Images/Framework.png)
 
 ## Set up:
@@ -22,8 +28,6 @@ LightGODE/
         ├─ amazon-beauty
         ├─ amazon-toys-games
         ├─ gowalla
-
-
 ```
 
 ### Running on different datasets:
