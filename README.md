@@ -1,9 +1,11 @@
 # Do We Really Need Graph Convolution During Training? Light Post-Training Graph-ODE for Efficient Recommendation
 
 Pytorch Implementation for CIKM 2024 Full Research Track Paper: 
-> **[Do We Really Need Graph Convolution During Training? Light Post-Training Graph-ODE for Efficient Recommendation](https://github.com/DavidZWZ/LightGODE).
+> **[Do We Really Need Graph Convolution During Training? Light Post-Training Graph-ODE for Efficient Recommendation](https://github.com/DavidZWZ/LightGODE).**
 > 33rd ACM International Conference on Information and Knowledge , CIKM 2024 <br>
 > Weizhi Zhang, Liangwei Yang, Zihe Song, Henry Peng Zou, Ke Xu, Liancheng Fang, Philip S. Yu <br>
+
+[Framework](Images/framework.pdf)
 
 ## Set up:
 ### Dependencies
