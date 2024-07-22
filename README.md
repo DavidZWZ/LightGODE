@@ -5,7 +5,7 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 > 33rd ACM International Conference on Information and Knowledge , CIKM 2024 <br>
 > Weizhi Zhang, Liangwei Yang, Zihe Song, Henry Peng Zou, Ke Xu, Liancheng Fang, Philip S. Yu <br>
 
-![Framework](Images/framework.pdf)
+<img src='Images/framework.pdf' />
 
 ## Set up:
 ### Dependencies
@@ -44,4 +44,4 @@ python run_recbole.py -m LightGODE -d gowalla -w 0
 ```
 
 ## Acknowledgement
-The structure of this repo is built based on [Recbole](https://github.com/RUCAIBox/RecBole). Thanks for their great work.
+The structure of this repo is built based on [RecBole](https://github.com/RUCAIBox/RecBole). Thanks for their great work.
