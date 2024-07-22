@@ -1,14 +1,30 @@
-# This the Pytorch Implementation of LightGODE
+# Do We Really Need Graph Convolution During Training? Light Post-Training Graph-ODE for Efficient Recommendation
 
-## How to use:
-1. Install the torch-based environment
+Pytorch Implementation for CIKM 2024 Full Research Track Paper: 
+> **[Do We Really Need Graph Convolution During Training? Light Post-Training Graph-ODE for Efficient Recommendation](https://github.com/DavidZWZ/LightGODE).
+> 33rd ACM International Conference on Information and Knowledge , CIKM 2024 <br>
+> Weizhi Zhang, Liangwei Yang, Zihe Song, Henry Peng Zou, Ke Xu, Liancheng Fang, Philip S. Yu <br>
+
+## Set up:
+### Dependencies
 ```
 pip install -r requirements.txt
 ```
 
-2. Get the beauty, toys-and-games, gowalla dataset under dataset folder
+### Dataset Preparation
+Get the beauty, toys-and-games, gowalla dataset under dataset folder
+Overall file structure:
+```
+LightGODE/
+    ├─ Dataset/
+        ├─ amazon-beauty
+        ├─ amazon-toys-games
+        ├─ gowalla
 
-3. Running on different datasets:
+
+```
+
+### Running on different datasets:
 
 Amazon-Beauty
 ```
@@ -22,5 +38,8 @@ python run_recbole.py -m LightGODE -d amazon-toys-games
 
 Gowalla
 ```
-python run_recbole.py -m LightGODE -d gowalla
+python run_recbole.py -m LightGODE -d gowalla -w 0
 ```
+
+## Acknowledgement
+The structure of this repo is built based on [Recbole](https://github.com/RUCAIBox/RecBole). Thanks for their great work.
