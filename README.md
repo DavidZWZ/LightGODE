@@ -5,7 +5,7 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 > 33rd ACM International Conference on Information and Knowledge , CIKM 2024 <br>
 > Weizhi Zhang, Liangwei Yang, Zihe Song, Henry Peng Zou, Ke Xu, Liancheng Fang, Philip S. Yu <br>
 
-[Framework](Images/framework.pdf)
+[Framework](Images/framework.png)
 
 ## Set up:
 ### Dependencies
