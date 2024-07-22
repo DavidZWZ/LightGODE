@@ -9,13 +9,12 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 **Investigate the Role of Graph Convolution & Analyze it from BFS (GCN) vs DFS (MF) perspective**
 <p  align="center">
   <img src="Images/Prelim.png" alt="Investigation" width="400">
-  <br><img src="Images/BFS-DFS.png" alt="BFS vs DFS" width="380"/><br>
-  The Embedding Discrepancy Issue<br><img src="Images/Trade-off.png" alt="ED" width="450"/>
+  <img src="Images/BFS-DFS.png" alt="BFS vs DFS" width="380"/><br>
 </p>
 
 **Identify the Embedding Discrepancy Issue when further Increase the Depth of Post-Training Graph Convolution Layers**
 <p  align="center">
-  <br><img src="Images/Trade-off.png" alt="ED" width="420"/>
+  <img src="Images/Trade-off.png" alt="ED" width="420"/>
 </p>
 
 ## Solution: Light Post-Training Graph-ODE for Efficient Recommendation.
