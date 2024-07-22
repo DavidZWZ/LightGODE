@@ -8,7 +8,7 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 ## Investigation: Do We Really Need Graph Convolution During Training?
 **Investigate the Role of Graph Convolution & Analyze it from BFS (GCN) vs DFS (MF) perspective**
 <p  align="center">
-  <img src="Images/Prelim.png" alt="Investigation" width="400">
+  <img src="Images/Prelim.png" alt="Investigation" width="360">
   <img src="Images/BFS-DFS.png" alt="BFS vs DFS" width="380"/><br>
 </p>
 
