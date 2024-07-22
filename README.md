@@ -7,9 +7,9 @@ Pytorch Implementation for CIKM 2024 Full Research Track Paper:
 
 ## Investigation: Do We Really Need Graph Convolution During Training?
 <p align="center">
-  <img src="Images/Prelim.png" alt="Investigation" width="500"><br>Investigation of Role of Graph Convolution<br>
-  <img src="Images/BFS-DFS.png" alt="BFS vs DFS" width="450"/><br>BFS (GCN) vs DFS (MF) perspective<br>
-  <img src="Images/Trade-off.png" alt="ED" width="550"/><br>The Embedding Discrepancy Issue<br>
+  Investigation of Role of Graph Convolution<br><img src="Images/Prelim.png" alt="Investigation" width="500"><br>
+  BFS (GCN) vs DFS (MF) perspective<br><img src="Images/BFS-DFS.png" alt="BFS vs DFS" width="450"/><br>
+  The Embedding Discrepancy Issue<br><img src="Images/Trade-off.png" alt="ED" width="550"/>
 </p>
 
 ## Solution: Light Post-Training Graph-ODE for Efficient Recommendation.
