@@ -27,14 +27,18 @@ pip install -r requirements.txt
 ```
 
 ### Dataset Preparation
-Get the beauty, toys-and-games, gowalla dataset under dataset folder
-Overall file structure:
+Get the [Amazon_Beauty](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Beauty.zip), [Amazon_Toys_and_Games](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Toys_and_Games.zip), [gowalla](https://drive.google.com/drive/folders/1vhRuvIzKYBSlaNFcD9Y3igWjBgaA) dataset under dataset folder
+
+Please modify the file name and arrange them in the following structure:
 ```
 LightGODE/
     ├─ Dataset/
         ├─ amazon-beauty
+            ├─ amazon-beauty.inter
         ├─ amazon-toys-games
+            ├─ amazon-toys-games.inter
         ├─ gowalla
+            ├─ gowalla.inter
 ```
 
 ### Running on different datasets:
