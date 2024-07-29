@@ -103,7 +103,11 @@ class Config(object):
         self.final_config_dict["suffix"] = str(self.args.suffix)
         if self.args.weight_decay != self.final_config_dict["weight_decay"]:
             self.final_config_dict["weight_decay"] = float(self.args.weight_decay)
-        
+        if self.args.tem:
+            self.final_config_dict["t"] = float(self.args.tem)
+        if self.args.gamma:
+            self.final_config_dict["gamma"] = float(self.args.gamma)
+            
     def _init_parameters_category(self):
         self.parameters = dict()
         self.parameters["General"] = general_arguments

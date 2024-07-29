@@ -45,17 +45,17 @@ LightGODE/
 
 Amazon-Beauty
 ```
-python run_recbole.py -m LightGODE -d amazon-beauty
+python run_recbole.py -m LightGODE -d amazon-beauty -t 1.8 -g 0.5
 ```
 
 Amazon-Toys-and-Games
 ```
-python run_recbole.py -m LightGODE -d amazon-toys-games
+python run_recbole.py -m LightGODE -d amazon-toys-games -t 0.8 -g 0.5 -w 0
 ```
 
 Gowalla
 ```
-python run_recbole.py -m LightGODE -d gowalla -w 0
+python run_recbole.py -m LightGODE -d gowalla -t 3 -g 10 -w 0
 ```
 
 ## Acknowledgement
