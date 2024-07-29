@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 ### Dataset Preparation
-Get the [Amazon_Beauty](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Beauty.zip), [Amazon_Toys_and_Games](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Toys_and_Games.zip), [gowalla](https://drive.google.com/drive/folders/1vhRuvIzKYBSlaNFcD9Y3igWjBgaA) dataset under dataset folder
+Get the [Amazon_Beauty](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Beauty.zip), [Amazon_Toys_and_Games](https://recbole.s3-accelerate.amazonaws.com/ProcessedDatasets/Amazon_ratings/Amazon_Toys_and_Games.zip), [gowalla](https://drive.google.com/file/d/1PuwawxTtrR7xjna9U6kWAQ56L2ja9dYG/view?usp=sharing) dataset under dataset folder
 
 Please modify the file name and arrange them in the following structure:
 ```
